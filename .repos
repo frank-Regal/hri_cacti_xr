@@ -1,13 +1,21 @@
 repositories:
-  gesture_recognition:
+  hri_cacti_xr:
+    type: git
+    url: git@github.com:frank-Regal/hri_cacti_xr.git
+    version: main
+  hri_cacti_xr/gesture_recognition:
     type: git
     url: git@github.com:frank-Regal/gesture_recognition.git
-    version: main
-  speech_recognition:
+    version: lstm
+  hri_cacti_xr/image_writer:
+    type: git
+    url: git@github.com:frank-Regal/image_writer.git
+    version: melodic-devel
+  hri_cacti_xr/speech_recognition:
     type: git
     url: git@github.com:frank-Regal/speech_recognition.git
     version: main
-  speech_recognition/speech_to_text_research:
+  hri_cacti_xr/speech_recognition/speech_to_text_research:
     type: git
     url: git@github.com:frank-Regal/speech_to_text_research.git
     version: main
