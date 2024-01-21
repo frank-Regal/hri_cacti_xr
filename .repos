@@ -1,0 +1,5 @@
+repositories:
+  gesture_recognition:
+    type: git
+    url: git@github.com:frank-Regal/gesture_recognition.git
+    version: main
