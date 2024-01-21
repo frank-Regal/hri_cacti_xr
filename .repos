@@ -9,8 +9,3 @@ repositories:
     url: git@github.com:frank-Regal/speech_recognition.git
     version: main
     path: speech_recognition
-  speech_to_text_research:
-    type: git
-    url: git@github.com:frank-Regal/speech_to_text_research.git
-    version: main
-    path: speech_recognition/speech_to_text_research
