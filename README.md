@@ -4,7 +4,7 @@ Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for
 ## Getting Started
 1. Install [vcstool](https://github.com/dirk-thomas/vcstool) dependency
 ```
-sudo apt install vcstool-python
+sudo apt install python3-vcstool
 ```
 2. Clone this repo and associated repos
 ```
