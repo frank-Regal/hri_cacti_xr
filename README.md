@@ -8,7 +8,7 @@ sudo apt install vcstool-python
 ```
 2. Clone this repo and associated repos
 ```
-git clone 
+git clone git@github.com:frank-Regal/hri_cacti_xr.git
 ```
 ```
 cd hri_cacti_xr && vcs import < .repos
