@@ -7,7 +7,7 @@ Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for
 - [image_writer](https://github.com/frank-Regal/image_writer) - ROS package used to write sensor_msgs/Image to images for early data processing
 - [speech_to_text_research](https://github.com/frank-Regal/speech_to_text_research) - speech to text development repo.
 
-## Getting Started
+## Setup Workspace
 1. Install [vcstool](https://github.com/dirk-thomas/vcstool) dependency
 ```
 sudo apt install python3-vcstool
@@ -19,3 +19,13 @@ git clone git@github.com:frank-Regal/hri_cacti_xr.git
 ```
 cd hri_cacti_xr && vcs import < .repos
 ```
+
+## Cloning Raw Bag Data
+Raw bag data is saved in a [Google Drive Directory](https://drive.google.com/drive/folders/1F_q5MIJcItS98ip6DdXzI2j1rtw0_qrB?usp=sharing). To download the raw bags to your machine install ```gdown``` and then run the python scrip in ```bags``` directory.
+1. Install [gdown](https://pypi.org/project/gdown/) dependency
+```
+pip3 install gdown
+```
+2. Download bag data using a python script placed in the ```bag``` directory. Use the ```--dir``` flag to define specific directories within [this](https://drive.google.com/drive/folders/1F_q5MIJcItS98ip6DdXzI2j1rtw0_qrB?usp=sharing) directory to download. Leave empty to download all directories.
+```
+cd bags && python3 get-data.py [--dir DIRECTORY_ONE DIRECTORY_TWO]
