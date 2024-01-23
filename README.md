@@ -31,6 +31,10 @@ pip3 install gdown
 ```
 cd bags && python3 get-data.py [--dir DIRECTORY_ONE DIRECTORY_TWO]
 ```
+3. Play bags sequentially (to have [image_writer](https://github.com/frank-Regal/image_writer) write to video files).
+```
+cd bags && ./play-data.sh [DIRECTORY_TO_BAGS]
+```
 ### View
 1. From a terminal open the saved RVIZ config file
 ```
