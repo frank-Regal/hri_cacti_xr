@@ -3,6 +3,7 @@
 import argparse
 import gdown
 
+# map of directory names in google drive with their assosciated shared link
 dir_map_ = {
 	"stop": "https://drive.google.com/drive/folders/14zpJZv5T8XAdKUtNUQaYLisfe-MGhcZ6?usp=drive_link",
 	"left": "https://drive.google.com/drive/folders/1rWSC7so9MoK1bRm67lNrjXrrrk4_kjyg",
@@ -11,6 +12,7 @@ dir_map_ = {
 }
 
 def main():
+    
 	# create a parser object
 	parser = argparse.ArgumentParser()
 

@@ -1,3 +1,9 @@
+########
+# This file plays bags in a directory in sequential order. 
+# It is used to run a script that listens to bags of image/audio 
+# data and then writes that bag data to image/audio files.
+########
+
 #!/bin/bash
 
 # Check if an argument was provided
