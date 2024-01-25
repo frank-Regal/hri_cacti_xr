@@ -2,6 +2,7 @@
 
 import argparse
 import gdown
+from gdown.exceptions import FolderContentsMaximumLimitError
 
 # map of directory names in google drive with their assosciated shared link
 dir_map_ = {
@@ -25,7 +26,10 @@ def main():
 			for input_dir in args.dir:
 				if (input_dir == dir_name):
 					print("Downloading data from \"" + dir_name + "\" directory.")
-					gdown.download_folder(url, quiet=False, use_cookies=False)
+					try:
+						gdown.download_folder(url, quiet=False, use_cookies=False)
+					except FolderContentsMaximumLimitError:
+						print("ERROR: There are 50 or more files in the directory! Split them up into seperate directories.")
 
 	# download data from all folders
 	else:
@@ -33,7 +37,10 @@ def main():
 		if (user_response == "Y" or user_response == "y"):
 			for dir_name, url in dir_map_.items():
 				print("Downloading data from \"all\" folders. This may take a while ...")
-				gdown.download_folder(url, quiet=False, use_cookies=False)
+				try:
+					gdown.download_folder(url, quiet=False, use_cookies=False)
+				except FolderContentsMaximumLimitError:
+					print("ERROR: There are 50 or more files in the directory! Split them up into seperate directories.")
 		else:
 			print("Done.")
 

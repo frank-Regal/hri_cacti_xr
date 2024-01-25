@@ -3,3 +3,8 @@ speech_recognition
 speech_to_text_research
 image_writer
 *.bag
+*.avi
+*.mp4
+*.mp3
+*.wav
+*.mov

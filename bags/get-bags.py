@@ -2,6 +2,7 @@
 
 import argparse
 import gdown
+from gdown.exceptions import FolderContentsMaximumLimitError
 
 # map of directory names in google drive with their assosciated shared link
 dir_map_ = {
@@ -28,7 +29,10 @@ def main():
 			for input_dir in args.dir:
 				if (input_dir == dir_name):
 					print("Downloading data from \"" + dir_name + "\" directory.")
-					gdown.download_folder(url, quiet=False, use_cookies=False)
+					try:
+						gdown.download_folder(url, quiet=False, use_cookies=False)
+					except FolderContentsMaximumLimitError:
+						print("no good")
 
 	# download data from all folders
 	else:
