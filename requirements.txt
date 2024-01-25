@@ -1,3 +1,4 @@
 mediapipe==0.10.9
 scipy==1.10.1
 ipykernel==6.29.0
+opencv-python==4.9.0.80
