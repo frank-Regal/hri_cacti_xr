@@ -97,7 +97,3 @@ Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for
 - [speech_recognition](https://github.com/frank-Regal/speech_recognition) - models & pkgs used to classify verbal gestures from XR head-mounted displays
 - [image_writer](https://github.com/frank-Regal/image_writer) - ROS package used to write sensor_msgs/Image to images for early data processing
 - [speech_to_text_research](https://github.com/frank-Regal/speech_to_text_research) - speech to text development repo.
-cd bags && rviz -d image-viewer.rviz
-```
-
-
