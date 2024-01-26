@@ -1,0 +1,6 @@
+repositories:
+  robofleet_client:
+    type: git
+    url: git@github.com:UTNuclearRobotics/robofleet_client.git
+    version: noetic-devel
+    path: ./../../
