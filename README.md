@@ -66,17 +66,11 @@ Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for
    ```
    pip3 install gdown
    ```
-2. Download bag data using a python script placed in the ```bag``` directory. Use the ```--dir``` flag to define specific directories within [this](https://drive.google.com/drive/folders/1F_q5MIJcItS98ip6DdXzI2j1rtw0_qrB?usp=sharing) directory to download. Leave empty to download all directories.
-   ```
-   cd bags
-   ```
+2. Download bag data using a python script placed in the ```bag``` directory. Use the ```--dir``` flag to define specific directories within [this](https://drive.google.com/drive/folders/1F_q5MIJcItS98ip6DdXzI2j1rtw0_qrB?usp=sharing) directory to download. Leave empty to download all directories. Run the following command from the ```hri_cacti_xr/bags``` directory.
    ```
    python3 get-bags.py [--dir DIRECTORY_ONE DIRECTORY_TWO]
    ```
-3. Play bags sequentially (used when having [image_writer](https://github.com/frank-Regal/image_writer) write the bagged image topics to video files).
-   ```
-   cd bags
-   ```
+3. Play bags sequentially (used when having [image_writer](https://github.com/frank-Regal/image_writer) write the bagged image topics to video files). Run the following command from the ```hri_cacti_xr/bags``` directory.
    ```
    ./play-data.sh [DIRECTORY_TO_BAGS]
    ```
@@ -102,9 +96,10 @@ Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for
 3. When you say the words **"Hey Robot"** the HoloLens will record and send 10 seconds worth of data.
 
 ### Viewing Bagged Data
-1. From a terminal open the saved RVIZ config file
+> **Info:** We have created a specific RVIZ configuration to view all four VLC camera streams nicely.
+1. From a terminal open the saved RVIZ config file. Run the following command from the ```hri_cacti_xr/bags``` directory.
    ```
-   cd bags && rviz -d image-viewer.rviz
+   rviz -d image-viewer.rviz
    ```
 2. From another terminal play the bag data. The four mono cameras from the HoloLens will be viewed.
    
