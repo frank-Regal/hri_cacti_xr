@@ -86,7 +86,7 @@ Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for
 
 #### Local Machine
 1. Ensure [robofleet_client](https://github.com/UTNuclearRobotics/robofleet_client/tree/iron-devel) was installed and configured with the instructions provided in the [Installation](#1-installation) section above.
-2. Connect to the same network as the HoloLens and configure the `host_url:` variable in `hri_cacti_xr/robofleet` with the IP address of the [robotfleet_server](https://github.com/ut-amrl/robofleet_server/tree/master)
+2. Connect to the same network as the HoloLens and configure the `host_url:` variable in `hri_cacti_xr/robofleet/hl-ss-config.yaml` with the IP address of the [robotfleet_server](https://github.com/ut-amrl/robofleet_server/tree/master)
 3. Start a `roscore`
 4. Run robofleet_client with provided config file
    ```
