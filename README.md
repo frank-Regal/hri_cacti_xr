@@ -92,7 +92,7 @@ Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for
    ```
    rosrun robofleet_client client robofleet/hl-ss-config.yaml
    ```
-5. Record bag data to the `hri_cacti_xr/bags` directory
+5. Record bag data to the `hri_cacti_xr/bags/<command_name>` directory
    ```
    rosbag record -o <command_name> -a
    ```
