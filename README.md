@@ -1,12 +1,13 @@
 # HRI Cacti :cactus:
 Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for Extended Reality (XR) devices.
 
-[Installation](#installation)
-[Contributing](#contributing)
-[Associated Packages](#associated)
+## 0. Table of Contents
+   * [1. Installation](#1-installation)
+   * [2. Contributing](#2-contributing)
+   * [3. Associated Packages](#3-associated-packages)
 
 
-## Installation
+## 1. Installation
 
 1. Install [ROS](https://www.ros.org/) & Create a Catkin Workspace
 2. Clone Into `catkin_ws/src`
@@ -64,7 +65,7 @@ Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for
    ```
 
 
-## Contributing
+## 2. Contributing
 ### Downloading Bags & Raw Data
 > **Info:** Raw bag data is saved in a public [Google Drive Directory](https://drive.google.com/drive/folders/1F_q5MIJcItS98ip6DdXzI2j1rtw0_qrB?usp=sharing). To download the raw bags to your machine install ```gdown``` and then run the python script provided in ```hri_cacti_xr/bags``` directory.
 1. Install [gdown](https://pypi.org/project/gdown/) dependency
@@ -108,7 +109,7 @@ Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for
    ```
 2. From another terminal play the bag data. The four mono cameras from the HoloLens will be viewed.
    
-## Associated Packages
+## 3. Associated Packages
 - [gesture_recognition](https://github.com/frank-Regal/gesture_recognition) - models & pkgs used to classify non-verbal gestures from XR head-mounted displays
 - [speech_recognition](https://github.com/frank-Regal/speech_recognition) - models & pkgs used to classify verbal gestures from XR head-mounted displays
 - [image_writer](https://github.com/frank-Regal/image_writer) - ROS package used to write sensor_msgs/Image to images for early data processing
