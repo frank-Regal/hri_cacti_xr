@@ -1,6 +1,11 @@
 # HRI Cacti :cactus:
 Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for Extended Reality (XR) devices.
 
+[Installation](#installation)
+[Contributing](#contributing)
+[Associated Packages](#associatedpackages)
+
+
 ## Installation
 
 1. Install [ROS](https://www.ros.org/) & Create a Catkin Workspace
