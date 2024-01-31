@@ -105,7 +105,7 @@ Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for
 > **Info:** We have created a specific RVIZ configuration to view all four VLC camera streams nicely.
 1. From a terminal open the saved RVIZ config file. Run the following command from the ```hri_cacti_xr/bags``` directory.
    ```
-   rviz -d image-viewer.rviz
+   rviz -d .image-viewer.rviz
    ```
 2. From another terminal play the bag data. The four mono cameras from the HoloLens will be viewed.
    
