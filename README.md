@@ -66,7 +66,7 @@ Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for
 
 
 ## 2. Contributing
-### Downloading Bags & Raw Data
+### 2A. Downloading Bags & Raw Data
 > **Info:** Raw bag data is saved in a public [Google Drive Directory](https://drive.google.com/drive/folders/1F_q5MIJcItS98ip6DdXzI2j1rtw0_qrB?usp=sharing). To download the raw bags to your machine install ```gdown``` and then run the python script provided in ```hri_cacti_xr/bags``` directory.
 1. Install [gdown](https://pypi.org/project/gdown/) dependency
    ```
@@ -81,7 +81,7 @@ Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for
    ./play-data.sh [DIRECTORY_TO_BAGS]
    ```
 
-### Recording HoloLens Sensor Stream Data
+### 2B. Recording HoloLens Sensor Stream Data
 > **Info:** To record raw sensor stream data from the hololens and bag it to your machine follow the steps below. You must have a robofleet_server running already that the hololens and your local machine can connect to.
 
 #### Local Machine
@@ -101,7 +101,7 @@ Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for
 2. Open the application
 3. When you say the words **"Hey Robot"** the HoloLens will record and send 10 seconds worth of data.
 
-### Viewing Bagged Data
+### 2C. Viewing Bagged Data
 > **Info:** We have created a specific RVIZ configuration to view all four VLC camera streams nicely.
 1. From a terminal open the saved RVIZ config file. Run the following command from the ```hri_cacti_xr/bags``` directory.
    ```
