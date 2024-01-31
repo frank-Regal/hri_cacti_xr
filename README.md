@@ -96,6 +96,8 @@ Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for
    # play continuously
    ./play-data.sh [DIRECTORY_TO_BAGS]
    ```
+5. (Optional) Write bags to ```.avi``` video files.
+   * see [image_writer](https://github.com/frank-Regal/image_writer) repo for details.
 
 ### 2B. Recording HoloLens Sensor Stream Data
 > **Info:** To record raw sensor stream data from the hololens and bag it to your machine follow the steps below. You must have a robofleet_server running already that the hololens and your local machine can connect to.
@@ -120,7 +122,7 @@ Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for
 ### 2C. Viewing Bagged Data
 > **Info:** We have created a specific RVIZ configuration to view all four VLC camera streams nicely.
 1. From a terminal open the saved RVIZ config file. Run the following command from the ```hri_cacti_xr/bags``` directory.
-   ```
+   ```shell
    rviz -d .image-viewer.rviz
    ```
 2. From another terminal play the bag data. The four mono cameras from the HoloLens will be viewed.
