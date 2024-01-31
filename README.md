@@ -1,7 +1,7 @@
 # HRI Cacti :cactus:
 Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for Extended Reality (XR) devices.
 
-## 0. Table of Contents
+## Table of Contents
    * [1. Installation](#1-installation)
    * [2. Contributing](#2-contributing)
    * [3. Associated Packages](#3-associated-packages)
