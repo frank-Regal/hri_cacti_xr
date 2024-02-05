@@ -14,7 +14,7 @@ params:
   # Verbosity 0 - MINIMAL
   # Verbosity 1 - CONFIG_ONLY
   # Verbosity 2 - ALL
-  verbosity: 0
+  verbosity: 1
 
   # you may need more threads to handle a large amount of traffic
   spin_threads: 4
@@ -50,12 +50,18 @@ subscribers: [
     no_drop: true
   },
   { # Receive stop messages
+    client_topic: "/hololens/PV/image/stop",
+    rbf_topic: "/hololens/PV/image/stop",
+    type: "std_msgs/Empty",
+    no_drop: true
+  },
+  { # Receive start messages
     client_topic: "/hololens/natural_input_capture/start",
     rbf_topic: "/hololens/natural_input_capture/start",
     type: "std_msgs/Empty",
     no_drop: true
   },
-  { # Receive stop messages
+  { # Receive start messages
     client_topic: "/hololens/natural_input_capture/stop",
     rbf_topic: "/hololens/natural_input_capture/stop",
     type: "std_msgs/Empty",
@@ -67,28 +73,34 @@ subscribers: [
     type: "audio_common_msgs/AudioData",
     no_drop: true
   },
-  { # Receive microphone data
-    client_topic: "/hololens/LEFT_LEFT/image/raw",
+  { # Receive image data
+    client_topic: "/hololens/LEFT_LEFT/image",
     rbf_topic: "/hololens/LEFT_LEFT/image/raw",
     type: "sensor_msgs/Image",
     no_drop: true
   },
-  { # Receive stop messages
-    client_topic: "/hololens/LEFT_FRONT/image/raw",
+  { # Receive image messages
+    client_topic: "/hololens/LEFT_FRONT/image",
     rbf_topic: "/hololens/LEFT_FRONT/image/raw",
     type: "sensor_msgs/Image",
     no_drop: true
   },
-  { # Receive stop messages
-    client_topic: "/hololens/RIGHT_RIGHT/image/raw",
+  { # Receive image messages
+    client_topic: "/hololens/RIGHT_RIGHT/image",
     rbf_topic: "/hololens/RIGHT_RIGHT/image/raw",
     type: "sensor_msgs/Image",
     no_drop: true
   },
-  { # Receive stop messages
-    client_topic: "/hololens/RIGHT_FRONT/image/raw",
+  { # Receive image messages
+    client_topic: "/hololens/RIGHT_FRONT/image",
     rbf_topic: "/hololens/RIGHT_FRONT/image/raw",
     type: "sensor_msgs/Image",
     no_drop: true
   },
+  { # Receive image messages
+    client_topic: "/hololens/PV/image/compressed",
+    rbf_topic: "/hololens/PV/image",
+    type: "sensor_msgs/CompressedImage",
+    no_drop: true
+  }
 ]
