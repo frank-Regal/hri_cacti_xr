@@ -8,3 +8,5 @@ image_writer
 *.mp3
 *.wav
 *.mov
+bags/*
+data/*

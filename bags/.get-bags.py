@@ -9,6 +9,7 @@ dir_map_ = {
     "stop": "https://drive.google.com/drive/folders/14zpJZv5T8XAdKUtNUQaYLisfe-MGhcZ6",
     "hold": "https://drive.google.com/drive/folders/1UAM0eQHVx3DDOY3H9RBgUGJ4hpxeWlkh",
     "go_right": "https://drive.google.com/drive/folders/1rWSC7so9MoK1bRm67lNrjXrrrk4_kjyg",
+    "test": "https://drive.google.com/drive/folders/1G11RxQLT6OZFgtyRijrxIShnqPmhE-Bf"
 }
 
 def main():
