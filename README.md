@@ -7,10 +7,10 @@ Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for
    * [3. Associated Packages](#3-associated-packages)
 
 
-## 1. Installation
+## 1. Setup & Installation
 
-1. Install [ROS](https://www.ros.org/) & Create a Catkin Workspace
-2. Clone Into `catkin_ws/src`
+1. Install [ROS](https://www.ros.org/) & create a new catkin workspace
+2. Clone *hri_cacti_xr* into `catkin_ws/src`
    ```shell
    git clone git@github.com:frank-Regal/hri_cacti_xr.git
    ```
@@ -29,27 +29,34 @@ Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for
        
     ```shell
     cd catkin_ws/src
+    ```
+    ```shell
     git clone https://github.com/ros-drivers/audio_common.git
+    ```
+    ```shell
     caktin build
     ```
     </details>
     <details>
     <summary><a href="https://github.com/UTNuclearRobotics/robofleet_client/tree/iron-devel">robofleet_client</a></summary>
     <br>
-    a. Change to src directory
-       
-    ```shell
-    cd catkin_ws/src
-    ```
-
-    b. Clone robofleet_client recursively
+      
+    a. Clone *robofleet_client* and all submodules into ```catkin_ws/src``` directory
+      
     ```shell
     git clone git@github.com:UTNuclearRobotics/robofleet_client.git
+    ```
+    ```shell
     cd robofleet_client
+    ```
+    >**Note:** make sure to checkout the ```robotfleet_client``` branch associated with your ROS version
+    ```shell
     git submodule init
+    ```
+    ```shell
     git submodule update
     ```
-    c. Build & source your catkin workspace
+    b. Build & Source
 
     ```shell
     catkin build robofleet_client
@@ -58,15 +65,13 @@ Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for
     source devel/setup.bash
     ```
 
-    d. Use the bash script in this repo to create required robofleet message types.
+    c. Use the bash script in this repo to create required robofleet message types.
+    >**Note:** Make sure ```audio_common_msgs``` have been built (steps are outlne above)
     ```shell
-    cd hri_cacti_xr/robofleet/ && ./build_rf_pkgs.sh
+    ./hri_cacti_xr/robofleet/build_rf_pkgs.sh
     ```
     
-    e. Build & source your catkin workspace
-    ```shell
-    caktin build
-    ```
+    d. Source your catkin workspace
     ```shell
     source devel/setup.bash
     ```
@@ -74,7 +79,7 @@ Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for
 
 4. Clone [Associated Packages](#associatedpackages) required for realtime classification of commands and development purposes.
    ```shell
-   cd hri_cacti_xr && vcs import < .repos
+   vcs import < hri_cacti_xr/.repos
    ```
 
 
