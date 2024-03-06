@@ -24,6 +24,16 @@ Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for
     ```
     </details>
     <details>
+    <summary><a href="https://github.com/ros-drivers/audio_common">audio_common_msgs</a></summary>
+    <br>
+       
+    ```shell
+    cd catkin_ws/src
+    git clone https://github.com/ros-drivers/audio_common.git
+    caktin build
+    ```
+    </details>
+    <details>
     <summary><a href="https://github.com/UTNuclearRobotics/robofleet_client/tree/iron-devel">robofleet_client</a></summary>
     <br>
     a. Change to src directory
