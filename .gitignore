@@ -10,3 +10,5 @@ image_writer
 *.mov
 bags/*
 data/*
+audio_writer
+bag_utility

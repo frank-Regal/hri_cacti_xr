@@ -2,7 +2,7 @@
 # run the following from this files directory
 # rosrun robofleet_client generate_plugin_pkg.py -o ./../.. -w $(cat rf_packages.txt)
 params:
-  host_url: "ws://192.168.11.11:8080"
+  host_url: "ws://192.168.12.58:8080"
 
   wait_for_pongs: false
   max_queue_before_waiting: 5
@@ -14,7 +14,7 @@ params:
   # Verbosity 0 - MINIMAL
   # Verbosity 1 - CONFIG_ONLY
   # Verbosity 2 - ALL
-  verbosity: 1
+  verbosity: 0
 
   # you may need more threads to handle a large amount of traffic
   spin_threads: 4

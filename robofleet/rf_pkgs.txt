@@ -1,4 +1,4 @@
 std_msgs
 geometry_msgs
 sensor_msgs
-augre_msgs
+audio_common_msgs
