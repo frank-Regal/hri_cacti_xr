@@ -34,12 +34,15 @@ Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for
 
     b. Clone robofleet_client recursively
     ```shell
-    git clone --recursive git@github.com:UTNuclearRobotics/robofleet_client.git
+    git clone git@github.com:UTNuclearRobotics/robofleet_client.git
+    cd robofleet_client
+    git submodule init
+    git submodule update
     ```
     c. Build & source your catkin workspace
 
     ```shell
-    caktin build robofleet_client
+    catkin build robofleet_client
     ```
     ```shell
     source devel/setup.bash
