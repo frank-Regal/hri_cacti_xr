@@ -11,6 +11,10 @@ repositories:
     type: git
     url: git@github.com:frank-Regal/gesture_recognition.git
     version: devel
+  ./gesture_recognition/include/keypoint_recog:
+    type: git
+    url: git@github.com:frank-Regal/keypoint_recog.git
+    version: main
   ./image_writer:
     type: git
     url: git@github.com:frank-Regal/image_writer.git
