@@ -1,21 +1,21 @@
 repositories:
-  hri_cacti_xr:
+  ./audio_writer:
     type: git
-    url: git@github.com:frank-Regal/hri_cacti_xr.git
-    version: main
-  hri_cacti_xr/gesture_recognition:
+    url: git@github.com:frank-Regal/audio_writer.git
+    version: noetic-devel
+  ./bag_utility:
+    type: git
+    url: git@github.com:frank-Regal/bag_utility.git
+    version: noetic-devel
+  ./gesture_recognition:
     type: git
     url: git@github.com:frank-Regal/gesture_recognition.git
-    version: lstm
-  hri_cacti_xr/image_writer:
+    version: devel
+  ./image_writer:
     type: git
     url: git@github.com:frank-Regal/image_writer.git
-    version: melodic-devel
-  hri_cacti_xr/speech_recognition:
+    version: noetic-devel
+  ./speech_recognition:
     type: git
     url: git@github.com:frank-Regal/speech_recognition.git
-    version: main
-  hri_cacti_xr/speech_recognition/speech_to_text_research:
-    type: git
-    url: git@github.com:frank-Regal/speech_to_text_research.git
-    version: main
+    version: devel
