@@ -1,4 +1,4 @@
-# HRI Cacti :cactus:
+# HRI Cacti XR :cactus:
 Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for Extended Reality (XR) devices.
 
 ## Table of Contents
@@ -7,7 +7,8 @@ Human Robot Interaction (HRI) Command and Control Teammate Interface (CACTI) for
    * [3. Associated Packages](#3-associated-packages)
 
 
-## 1. Setup & Installation
+## 1. Installation
+> ❗❗**Note**: It is recommended to use Docker for installation of this package. Please refer to the main [HRI-Cacti](https://github.com/frank-Regal/HRI-Cacti) project hub repo to install the pre-configured Docker image for this work. The following installation instructions were left for completeness.
 
 1. Install [ROS](https://www.ros.org/) & create a new catkin workspace
 2. Clone *hri_cacti_xr* into `catkin_ws/src`
