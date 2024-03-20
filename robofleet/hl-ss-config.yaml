@@ -14,17 +14,17 @@ params:
   # Verbosity 0 - MINIMAL
   # Verbosity 1 - CONFIG_ONLY
   # Verbosity 2 - ALL
-  verbosity: 0
+  verbosity: 1
 
   # you may need more threads to handle a large amount of traffic
-  spin_threads: 4
+  spin_threads: 8
 
 # Publish information to Robofleet Server
-publishers: [ 
+subscribers: [ 
 ]
 
 # Subscribe to information on Robofleet Server
-subscribers: [ 
+publishers: [ 
   { # Receive stop messages
     client_topic: "/hololens/LEFT_LEFT/stop",
     rbf_topic: "/hololens/LEFT_LEFT/stop",
@@ -71,36 +71,42 @@ subscribers: [
     client_topic: "/hololens/microphone/data",
     rbf_topic: "/hololens/microphone/data",
     type: "audio_common_msgs/AudioData",
+    no_drop: false
+  },
+  {
+    client_topic: "/tf",
+    rbf_topic: "/augre/tf",
+    type: "tf2_msgs/TFMessage",
     no_drop: true
   },
   { # Receive image data
     client_topic: "/hololens/LEFT_LEFT/image",
     rbf_topic: "/hololens/LEFT_LEFT/image/raw",
     type: "sensor_msgs/Image",
-    no_drop: true
+    no_drop: false
   },
   { # Receive image messages
     client_topic: "/hololens/LEFT_FRONT/image",
     rbf_topic: "/hololens/LEFT_FRONT/image/raw",
     type: "sensor_msgs/Image",
-    no_drop: true
+    no_drop: false
   },
   { # Receive image messages
     client_topic: "/hololens/RIGHT_RIGHT/image",
     rbf_topic: "/hololens/RIGHT_RIGHT/image/raw",
     type: "sensor_msgs/Image",
-    no_drop: true
+    no_drop: false
   },
   { # Receive image messages
     client_topic: "/hololens/RIGHT_FRONT/image",
     rbf_topic: "/hololens/RIGHT_FRONT/image/raw",
     type: "sensor_msgs/Image",
-    no_drop: true
+    no_drop: false
   },
   { # Receive image messages
     client_topic: "/hololens/PV/image/compressed",
     rbf_topic: "/hololens/PV/image",
     type: "sensor_msgs/CompressedImage",
-    no_drop: true
+    no_drop: false
   }
 ]
