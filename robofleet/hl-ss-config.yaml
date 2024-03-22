@@ -2,7 +2,7 @@
 # run the following from this files directory
 # rosrun robofleet_client generate_plugin_pkg.py -o ./../.. -w $(cat rf_packages.txt)
 params:
-  host_url: "ws://192.168.12.58:8080"
+  host_url: "ws://192.168.11.11:8080"
 
   wait_for_pongs: false
   max_queue_before_waiting: 5
@@ -20,11 +20,11 @@ params:
   spin_threads: 8
 
 # Publish information to Robofleet Server
-subscribers: [ 
+publishers: [ 
 ]
 
 # Subscribe to information on Robofleet Server
-publishers: [ 
+subscribers: [ 
   { # Receive stop messages
     client_topic: "/hololens/LEFT_LEFT/stop",
     rbf_topic: "/hololens/LEFT_LEFT/stop",
