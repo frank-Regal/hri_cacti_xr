@@ -11,6 +11,10 @@ repositories:
     type: git
     url: git@github.com:frank-Regal/gesture_recognition.git
     version: devel
+  ./multi_modal_fusion:
+    type: git
+    url: git@github.com:frank-Regal/multi_modal_fusion.git
+    version: devel
   ./image_writer:
     type: git
     url: git@github.com:frank-Regal/image_writer.git

@@ -2,6 +2,7 @@ gesture_recognition
 speech_recognition
 speech_to_text_research
 image_writer
+multi_modal_fusion
 *.bag
 *.avi
 *.mp4
