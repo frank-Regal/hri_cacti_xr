@@ -21,6 +21,30 @@ params:
 
 # Publish information to Robofleet Server
 publishers: [ 
+  { # Publish a stop message when stop is heard
+    client_topic: "/jackal/waypoint_manager/cancel",
+    rbf_topic: "/jackal/navigation/cancel",
+    type: "std_msgs/Empty",
+    no_drop: true
+  },
+  { # Publish classified gesture results
+    client_topic: "/hri_cacti/gesture/classification/best_result",
+    rbf_topic: "/hri_cacti/gesture/classification/best_result",
+    type: "std_msgs/String",
+    no_drop: true
+  },
+  { # Publish classified gesture results
+    client_topic: "/hri_cacti/speech/classification/best_result",
+    rbf_topic: "/hri_cacti/speech/classification/best_result",
+    type: "std_msgs/String",
+    no_drop: true
+  },
+  { # Publish classified gesture results
+    client_topic: "/hri_cacti/fused/classification/result",
+    rbf_topic: "/hri_cacti/fused/classification/result",
+    type: "std_msgs/String",
+    no_drop: true
+  }
 ]
 
 # Subscribe to information on Robofleet Server
@@ -73,12 +97,6 @@ subscribers: [
     type: "audio_common_msgs/AudioData",
     no_drop: false
   },
-  {
-    client_topic: "/tf",
-    rbf_topic: "/augre/tf",
-    type: "tf2_msgs/TFMessage",
-    no_drop: true
-  },
   { # Receive image data
     client_topic: "/hololens/LEFT_LEFT/image",
     rbf_topic: "/hololens/LEFT_LEFT/image/raw",
@@ -95,7 +113,7 @@ subscribers: [
     client_topic: "/hololens/RIGHT_RIGHT/image",
     rbf_topic: "/hololens/RIGHT_RIGHT/image/raw",
     type: "sensor_msgs/Image",
-    no_drop: false
+    no_drop: True
   },
   { # Receive image messages
     client_topic: "/hololens/RIGHT_FRONT/image",
